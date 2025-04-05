@@ -13,7 +13,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <!-- Title -->
     <title>Home | PhototBro Studio</title>
 
@@ -23,47 +22,35 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
-
-    <!-- Title -->
-    <title>Home | PhototBro Studio</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.png" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
+<script>
+  // Remove stray text nodes from body
+  document.body.childNodes.forEach(node => {
+    if (node.nodeType === 3 && node.textContent.trim() === "<") {
+      node.remove();
+    }
+  });
+</script>
   <body>
-    <!-- Preloader -->
     <div id="preloader">
       <div class="loader"></div>
     </div>
-    <!-- /Preloader -->
 
-    <!-- Header Area Start -->
     <header class="header-area">
-      <!-- Main Header Start -->
       <div class="main-header-area">
         <div class="classy-nav-container breakpoint-off">
           <div class="container">
-            <!-- Classy Menu -->
             <nav class="classy-navbar justify-content-between" id="alimeNav">
-              <!-- Logo -->
               <a class="nav-brand" href="index.html"
                 ><img src="img/core-img/logo.png" alt=""
               /></a>
 
-              <!-- Navbar Toggler -->
               <div class="classy-navbar-toggler">
                 <span class="navbarToggler"
                   ><span></span><span></span><span></span
                 ></span>
               </div>
 
-              <!-- Menu -->
               <div class="classy-menu">
-                <!-- Menu Close Button -->
                 <div class="classycloseIcon">
                   <div class="cross-wrap">
                     <span class="top"></span><span class="bottom"></span>
@@ -92,7 +79,7 @@
         <!-- Single Slide -->
         <div
           class="single-welcome-slide bg-img bg-overlay"
-          style="background-image: url(img/bg-img/IMG_3968.JPG)"
+          style="background-image: url(img/bg-img/Me01516.jpg)"
         >
           <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -111,14 +98,14 @@
                     data-animation="bounceInDown"
                     data-delay="100ms"
                   >
-                    <a                       href="mailto:hello.photobrostudio@gmail.com"
+                    <a                       href="contact.html"
  class="btn alime-btn mb-3 mb-sm-0 mr-4"
                       >Get In Touch</a
                     >
                     <a
                       class="hero-mail-contact"
-                      href="mailto:hello.photobrostudio@gmail.com"
-                      >hello.photobrostudio@gmail.com</a
+                      href="mailto:photobrostudios@gmail.com"
+                      >photobrostudios@gmail.com</a
                     >
                   </div>
                 </div>
@@ -130,7 +117,7 @@
         <!-- Single Slide -->
         <div
           class="single-welcome-slide bg-img bg-overlay"
-          style="background-image: url(img/bg-img/IMG_5168.jpg)"
+          style="background-image: url(img/bg-img/IMG_3968.jpg)"
         >
           <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -149,14 +136,14 @@
                     data-animation="bounceInUp"
                     data-delay="900ms"
                   >
-                    <a                       href="mailto:hello.photobrostudio@gmail.com"
+                    <a                       href="mailto:photobrostudios@gmail.com"
  class="btn alime-btn mb-3 mb-sm-0 mr-4"
                       >Get In Touch</a
                     >
                     <a
                       class="hero-mail-contact"
-                      href="mailto:hello.photobrostudio@gmail.com"
-                      >hello.photobrostudio@gmail.com</a
+                      href="mailto:photobrostudios@gmail.com"
+                      >photobrostudios@gmail.com</a
                     >
                   </div>
                 </div>
@@ -177,10 +164,10 @@
             <div class="alime-projects-menu">
               <div class="portfolio-menu text-center">
                 <button class="btn active" data-filter="*">All</button>
-                <button class="btn" data-filter=".human">Birthday</button>
-                <button class="btn" data-filter=".nature">Wedding</button>
-                <button class="btn" data-filter=".country">Convocation</button>
-                <button class="btn" data-filter=".video">Video</button>
+                <button class="btn" data-filter=".birthday">Birthday</button>
+                <button class="btn" data-filter=".wedding">Wedding</button>
+                <button class="btn" data-filter=".convocation">Convocation</button>
+                <button class="btn" data-filter=".maternity">Maternity</button>
               </div>
             </div>
           </div>
@@ -188,103 +175,386 @@
 
         <div class="row alime-portfolio">
           <!-- Single Gallery Item -->
-          <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item birthday mb-30 wow fadeInUp"
             data-wow-delay="100ms"
           >
             <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5155.jpg" alt="" />
+              <img src="img/bg-img/birthday/PhotobroAlph02539.jpg" alt="" />
               <div class="hover-content">
-                <a href="img/bg-img/IMG_5155.jpg" class="portfolio-img">+</a>
+                <a href="img/bg-img/birthday/PhotobroAlph02539.jpg" class="portfolio-img">+</a>
               </div>
             </div>
           </div>
-
-          <!-- Single Gallery Item -->
-          <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
-            data-wow-delay="300ms"
-          >
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5167.jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/IMG_5167.jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Single Gallery Item -->
-          <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
-            data-wow-delay="500ms"
-          >
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5157.jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/IMG_5157.jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Single Gallery Item -->
-          <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
-            data-wow-delay="700ms"
-          >
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5158.jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/IMG_5158.jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Single Gallery Item -->
-          <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+         
+            <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item mb-30 wow fadeInUp"
             data-wow-delay="100ms"
           >
             <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5159.jpg" alt="" />
+              <img src="img/bg-img/IMG_5156.jpg" alt="" />
               <div class="hover-content">
-                <a href="img/bg-img/IMG_5159.jpg" class="portfolio-img">+</a>
+                <a href="img/bg-img/IMG_5156.jpg" class="portfolio-img">+</a>
               </div>
             </div>
           </div>
 
           <!-- Single Gallery Item -->
           <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
             data-wow-delay="300ms"
           >
             <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5160.jpg" alt="" />
+              <img src="img/bg-img/wedding/IMG_5167.jpg" alt="" />
               <div class="hover-content">
-                <a href="img/bg-img/IMG_5160.jpg" class="portfolio-img">+</a>
+                <a href="img/bg-img/wedding/IMG_5167.jpg" class="portfolio-img">+</a>
               </div>
             </div>
           </div>
-
-          <!-- Single Gallery Item -->
-          <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
-            data-wow-delay="500ms"
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item birthday mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
           >
             <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5161.jpg" alt="" />
+              <img src="img/bg-img/birthday/IMG_5155.jpg" alt="" />
               <div class="hover-content">
-                <a href="img/bg-img/IMG_5161.jpg" class="portfolio-img">+</a>
+                <a href="img/bg-img/birthday/IMG_5155.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  wedding mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/PhotobroMI07765.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/PhotobroMI07765.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  maternity mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/Photobro0520.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/Photobro0520.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  maternity mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/Photobro3095.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/Photobro3095.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/Photobrocou6776.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/Photobrocou6776.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/PhotobroJN06778.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/PhotobroJN06778.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+            
+      
+             <!-- <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item maternity mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/PhotobroLAU0741.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/PhotobroLAU0741.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div> -->
+          </div>
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  maternity mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/Photobro3238.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/Photobro3238.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  maternity mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/PhotobroLAU0741.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/PhotobroLAU0741.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+         <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  maternity mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/PhotobroCL7353.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/PhotobroCL7353.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  maternity mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/PhotobroLU4389.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/PhotobroLU4389.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  maternity mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/PhotobroLAU0741.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/PhotobroLAU0741.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div> -->
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  wedding mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/PhotobroRI05591.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/PhotobroRI05591.jpg" class="portfolio-img">+</a>
               </div>
             </div>
           </div>
 
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  wedding mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/IMG_5166.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/IMG_5166.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  wedding mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/PhotobroAK02797.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/PhotobroAK02797.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Gallery Item -->
+
           <!-- Single Gallery Item -->
           <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item birthday mb-30 wow fadeInUp"
             data-wow-delay="700ms"
           >
             <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5162.jpg" alt="" />
+              <img src="img/bg-img/birthday/IMG_5158.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/birthday/IMG_5158.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/IMG_5159.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/IMG_5159.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/Photobro6296.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/Photobro6296.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+<div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/PhotobroAK02310.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/PhotobroAK02310.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/PhotobroAK02341.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/PhotobroAK02341.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/PhotobroAK02408.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/PhotobroAK02408.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/PhotobroLU6802.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/PhotobroLU6802.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item wedding mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/photobroLU6884.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/photobroLU6884.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Gallery Item -->
+    
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item convocation mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/convocation/IMG_5161.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/convocation/IMG_5161.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+ <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item convocation mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/convocation/PhotobroAM03595.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/convocation/PhotobroAM03595.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item convocation mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/convocation/Photobro6667.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/convocation/Photobro6667.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item convocation mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/convocation/Photobrobliss00550.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/convocation/Photobrobliss00550.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item convocation mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/convocation/PhotobroAM03842.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/convocation/PhotobroAM03842.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          
+ <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  wedding mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/IMG_5157.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/IMG_5157.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item birthday mb-30 wow fadeInUp"
+            data-wow-delay="700ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/birthday/IMG_5162.jpg" alt="" />
               <div class="hover-content">
                 <a href="img/bg-img/IMG_5162.jpg" class="portfolio-img">+</a>
               </div>
@@ -293,49 +563,129 @@
 
           <!-- Single Gallery Item -->
           <div
-            class="col-12 col-sm-6 col-lg-6 single_gallery_item video country mb-30 wow fadeInUp"
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  wedding mb-30 wow fadeInUp"
             data-wow-delay="100ms"
           >
             <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5163.jpg" alt="" />
+              <img src="img/bg-img/wedding/IMG_5163.jpg" alt="" />
               <div class="hover-content">
-                <a href="img/bg-img/IMG_5163.jpg" class="portfolio-img">+</a>
+                <a href="img/bg-img/wedding/IMG_5163.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  wedding mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/wedding/IMG_5160.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/wedding/IMG_5160.jpg" class="portfolio-img">+</a>
               </div>
             </div>
           </div>
 
           <!-- Single Gallery Item -->
           <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item birthday mb-30 wow fadeInUp"
             data-wow-delay="300ms"
           >
             <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5164.jpg" alt="" />
+              <img src="img/bg-img/birthday/IMG_5164.jpg" alt="" />
               <div class="hover-content">
-                <a href="img/bg-img/IMG_5164.jpg" class="portfolio-img">+</a>
+                <a href="img/bg-img/birthday/IMG_5164.jpg" class="portfolio-img">+</a>
               </div>
             </div>
           </div>
-
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item birthday mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/birthday/Photobrome4782.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/birthday/Photobrome4782.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+ <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item birthday mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/birthday/PhotobroMiraj1673.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/birthday/PhotobroMiraj1673.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item birthday mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/birthday/PhotobroOLS1915 (1).jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/birthday/PhotobroOLS1915 (1).jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
           <!-- Single Gallery Item -->
           <div
-            class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item birthday mb-30 wow fadeInUp"
             data-wow-delay="500ms"
           >
             <div class="single-portfolio-content">
-              <img src="img/bg-img/IMG_5165.jpg" alt="" />
+              <img src="img/bg-img/birthday/IMG_5165.jpg" alt="" />
               <div class="hover-content">
-                <a href="img/bg-img/IMG_5165.jpg" class="portfolio-img">+</a>
+                <a href="img/bg-img/birthday/IMG_5165.jpg" class="portfolio-img">+</a>
               </div>
             </div>
           </div>
         </div>
+        <!-- Single Gallery Item
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item maternity mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/Photobro6533.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/Photobro6533.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- Single Gallery Item -->
+         <!-- <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item  maternity mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/Photobro6426.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/Photobro6426.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item maternity mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/bg-img/maternity/Photobro6426.jpg" alt="" />
+              <div class="hover-content">
+                <a href="img/bg-img/maternity/Photobro6426.jpg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
         <!-- <div class="row">
           <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
             <a href="#" class="btn alime-btn btn-2 mt-15">View More</a>
-          </div>
-        </div> -->
+          </div> -->
+        </div>
       </div>
     </div>
     <!-- Gallery Area End -->
@@ -357,7 +707,7 @@
       <div class="instragram-feed-area owl-carousel">
         <!-- Single Instagram Item -->
         <div class="single-instagram-item">
-          <img src="img/bg-img/IMG_5167.jpg" alt="" />
+          <img src="img/bg-img/wedding/IMG_5167.jpg" alt="" />
           <div
             class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
           >
@@ -369,7 +719,7 @@
         </div>
         <!-- Single Instagram Item -->
         <div class="single-instagram-item">
-          <img src="img/bg-img/IMG_5166.jpg" alt="" />
+          <img src="img/bg-img/wedding/IMG_5166.jpg" alt="" />
           <div
             class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
           >
@@ -393,7 +743,7 @@
         </div>
         <!-- Single Instagram Item -->
         <div class="single-instagram-item">
-          <img src="img/bg-img/IMG_5157.jpg" alt="" />
+          <img src="img/bg-img/wedding/IMG_5157.jpg" alt="" />
           <div
             class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
           >
@@ -404,20 +754,11 @@
           </div>
         </div>
         <!-- Single Instagram Item -->
-        <div class="single-instagram-item">
-          <img src="img/bg-img/IMG_5161.jpg" alt="" />
-          <div
-            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
-          >
-            <a href="#">
-              <i class="ti-instagram" aria-hidden="true"></i>
-              <span>@photobrostudios</span>
-            </a>
-          </div>
-        </div>
+        
+        
         <!-- Single Instagram Item -->
         <div class="single-instagram-item">
-          <img src="img/bg-img/IMG_5163.jpg" alt="" />
+          <img src="img/bg-img/wedding/IMG_5163.jpg" alt="" />
           <div
             class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
           >
